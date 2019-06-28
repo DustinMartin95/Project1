@@ -4,7 +4,7 @@ document.getElementById("login").addEventListener("click", login);
 
 function login(){
   document.getElementById("fail-login").innerHTML = "";
-  let url = "http://localhost:8080/CompanyEmployeeHub/login";
+  let url = "http://ec2-3-19-30-224.us-east-2.compute.amazonaws.com:8080/EmployeeSite/login";
   let xhr = new XMLHttpRequest();
   xhr.open("GET",url);
 
@@ -13,7 +13,7 @@ function login(){
       let auth = xhr.getResponseHeader("Authorization");
       sessionStorage.setItem("token", auth);
       sessionStorage.setItem("email", email);
-      window.location.href="http://localhost:8080/CompanyEmployeeHub/employeeHub";
+      window.location.href="http://ec2-3-19-30-224.us-east-2.compute.amazonaws.com:8080/EmployeeSite/employeeHub";
     }else if(this.readyState === 4 && this.status === 401){
       failLogin();
     }

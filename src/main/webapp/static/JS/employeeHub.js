@@ -1,6 +1,6 @@
 let email = sessionStorage.getItem("email");
 let token = sessionStorage.getItem("token");
-let baseUrl = "http://localhost:8080/CompanyEmployeeHub";
+let baseUrl = "http://ec2-3-19-30-224.us-east-2.compute.amazonaws.com:8080/EmployeeSite";
 let employee;
 let id;
 let events;

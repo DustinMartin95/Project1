@@ -503,7 +503,7 @@ function shouldFillInfo(){
 //Logout
 function logout(){
     sessionStorage.removeItem("token");
-    window.location.href="http://localhost:8080/CompanyEmployeeHub/loginPage";
+    window.location.href= baseUrl + "/loginPage";
 }
 
 //Update information

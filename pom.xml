@@ -19,7 +19,7 @@
   <dependencies>
   	<dependency>
   		<groupId>com.oracle</groupId>
-  		<artifactId>jdbc7</artifactId>
+  		<artifactId>ojdbc7</artifactId>
   		<version>12.1.0</version>
   	</dependency>
   	<dependency>
